@@ -1,0 +1,13 @@
+npts 28 28 28
+parameter_file /home/jpreiksa/workspace/waterkit_jp/waterkit/waterkit/data/ff14SB_parameters.dat
+gridfld receptor_maps.fld
+spacing 0.375
+receptor_types HW OW
+ligand_types OW
+receptor receptor.pdbqt
+gridcenter 7.000 2.000 19.000
+smooth 0.000
+map receptor.OW.map
+elecmap receptor.e.map
+dsolvmap receptor.d.map
+dielectric 1.000

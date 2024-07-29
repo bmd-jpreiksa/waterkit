@@ -30,7 +30,9 @@ setup(name="waterkit",
                "scripts/wk_create_grid_protein_file.py",
                "scripts/wk_minimize_trajectory.py",
                "scripts/wk_get_spherical_map.py",
-               "scripts/wk_generate_gaff2_parameters.py"],
+               "scripts/wk_generate_gaff2_parameters.py",
+               "scripts/wk_prepare_water_cluster.py"
+               ],
       package_data={
             "waterkit" : ["data/*",
                           "data/water/spherical/*",
