@@ -120,7 +120,7 @@ def _write_pdbqt_file(output_name, molecule):
     output_str += 'END\n'
 
     with open(output_name, 'w') as w:
-        w.write(output_str)s
+        w.write(output_str)
 
 
 def _convert_amber_to_autodock_types(molecule):
