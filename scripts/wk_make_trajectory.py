@@ -105,7 +105,7 @@ def write_tleap_input_file(fname, pdb_filename, lib_files=None, frcmod_files=Non
     if lib_files is not None:
         output_str += ''.join(['loadoff %s\n' % ll for ll in lib_files])
     output_str += "\n"
-    output_str += "x = loadpdb %s\n" % pdb_filename.split("/")[-1]
+    output_str += "x = loadpdb %s\n" % pdb_filename # .split("/")[-1]
     output_str += "\n"
     output_str += "set default nocenter on\n"
     output_str += "saveAmberParm x %s.prmtop %s.rst7\n" % (prefix, prefix)
