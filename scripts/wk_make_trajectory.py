@@ -93,7 +93,7 @@ def write_tleap_input_file(fname, pdb_filename, lib_files=None, frcmod_files=Non
         frcmod_files (list): Amber frcmod parameter files for non-standard residues
 
     """
-    prefix = pdb_filename.split(".pdb")[0].split("/")[-1]
+    prefix = pdb_filename.split(".pdb")[0] #.split("/")[-1]
 
     output_str = "source leaprc.protein.ff14SB\n"
     output_str += "source leaprc.DNA.OL15\n"
